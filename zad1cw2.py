@@ -1,3 +1,4 @@
+Ćwiczenia 2 WD, Bartosz Napiórkowski
 Zad 1
 a = input()
 print(a.count(" "))
