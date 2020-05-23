@@ -1,0 +1,19 @@
+liczby = [x for x in range(4,40,4)]
+
+with open("dane11.txt","w+") as plik:
+        for liczba in liczby:
+            plik.write(str(liczba) + ",")
+
+
+plik = open("dane11.txt","r")
+print(plik.readlines())
+plik.close()
+
+print("------------------------")
+
+with open("dane11.txt","r+") as plik:
+    plik.write("Pierwszy tekst" + "\n")
+    plik.write("Drugi tekst" + "\n")
+    
+with open("dane11.txt","r") as plik:
+    print(plik.readlines())
